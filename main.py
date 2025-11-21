@@ -34,7 +34,7 @@ class Tank:
             self.angle = (self.angle - controls.rotation * self.rotation_speed * dt) % 360
 
         if controls.forward != 0:
-            forward_vector = pygame.Vector2(0, -1).rotate(self.angle)
+            forward_vector = pygame.Vector2(0, -1).rotate(-self.angle)
             displacement = forward_vector * controls.forward * self.speed * dt
             self.position += displacement
             self._clamp_to_window()
