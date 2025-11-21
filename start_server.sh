@@ -1,0 +1,1 @@
+python main.py --mode server --listen-host 0.0.0.0 --listen-port 5000
